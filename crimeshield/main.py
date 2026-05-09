@@ -29,7 +29,7 @@ if _PROJECT_ROOT not in sys.path:
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
-from crimeshield.config import GEMINI_API_KEY, AUDIT_LOG_PATH
+# from crimeshield.config import GEMINI_API_KEY, AUDIT_LOG_PATH
 from crimeshield.graph.graph import build_graph
 from crimeshield.graph.state import AgentState
 from crimeshield.pipeline.build_store import build_vector_store
@@ -152,6 +152,7 @@ def _cmd_health():
     _print_header("System Health Check")
     all_ok = True
     
+    # Simple check sequence
     checks = [
         ("Gemini API key", bool(GEMINI_API_KEY)),
         ("Vector store", lambda: build_vector_store()._collection.count() > 0),

@@ -1,0 +1,16 @@
+typology_code,typology_name,threshold_value,threshold_unit,reporting_obligation
+STRUCT-01,Structuring â€” cash deposits,2000,GBP per deposit,SAR required when more than 5 deposits each below threshold within 7 days
+STRUCT-02,Structuring â€” cumulative cash,10000,GBP per 30 days,SAR consideration triggered when cumulative deposits exceed threshold in 30-day window
+APP-01,APP Scam â€” single payment,1000,GBP,Mandatory reimbursement consideration under PSR scheme; SAR required on receiving account
+APP-02,APP Scam â€” rapid dispersal,5000,GBP total dispersed within 48 hours,SAR required and account suspension on identification
+SANC-01,Sanctions hit â€” any match,0,GBP (any value),Immediate escalation; SAR mandatory regardless of transaction value
+SANC-02,Sanctions â€” jurisdiction exposure,10000,GBP per transaction,SAR required for transactions routed through FATF grey-listed jurisdiction above threshold
+TBML-01,Trade-Based Money Laundering â€” invoice,25000,GBP per invoice,SAR consideration where 3 or more TBML indicators present; mandatory above threshold
+TBML-02,Trade-Based Money Laundering â€” cumulative,50000,GBP per 90 days,SAR required where cumulative trade payments exceed threshold without supporting documentation
+INV-01,Invoice Fraud â€” dormant counterparty,10000,GBP per invoice,SAR required within 5 working days where 3 or more indicators present in 30-day window
+MULE-01,Money Mule â€” inbound transfers,0,GBP (any value),SAR mandatory on identification; account suspension required
+MULE-02,Money Mule â€” rapid onward transfer,2000,GBP per transfer,Enhanced review triggered; SAR required where pattern confirmed
+CRYPTO-01,Crypto-linked laundering,10000,GBP per 30 days,SAR required where source of funds cannot be established above threshold
+PEP-01,PEP â€” source of wealth review,50000,GBP per transaction,EDD mandatory; senior management approval required above threshold
+ACCT-01,Account Takeover â€” unauthorised access,500,GBP per transaction,Immediate freeze and SAR filing; victim notification within 24 hours
+ACCT-02,Account Takeover â€” high value,5000,GBP per transaction,Escalation to Financial Crime Investigations; SAR mandatory

@@ -2,7 +2,7 @@
 CrimeShield AI — Structured Data Agent.
 
 Agent with tool access to query alerts and typology DataFrames.
-Uses create_tool_calling_agent with ChatGoogleGenerativeAI (Gemini native tool binding).
+Uses create_tool_calling_agent with xAI Grok via OpenAI-compatible API.
 """
 
 from __future__ import annotations
@@ -15,16 +15,16 @@ import pandas as pd
 from langchain_classic.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.tools import tool
-from langchain_google_genai import ChatGoogleGenerativeAI
 
-from crimeshield.config import GEMINI_API_KEY, LLM_MODEL
+
+from crimeshield.utils.llm import get_llm
 from crimeshield.utils.prompts import load_prompt
 
 logger = logging.getLogger(__name__)
 
 
 class StructuredDataAgent:
-    """Agent that queries alerts and typology DataFrames via Gemini tool calls."""
+    """Agent that queries alerts and typology DataFrames via Grok tool calls."""
 
     def __init__(self, alerts_df: pd.DataFrame, typologies_df: pd.DataFrame) -> None:
         self.alerts_df = alerts_df
@@ -94,11 +94,7 @@ class StructuredDataAgent:
 
         self.tools = [query_alerts_table, query_typology_table]
 
-        self.llm = ChatGoogleGenerativeAI(
-            model=LLM_MODEL,
-            temperature=0,
-            google_api_key=GEMINI_API_KEY,
-        )
+        self.llm = get_llm(small=False)
 
         system_msg = self._prompt_cfg["system"].strip()
         prompt = ChatPromptTemplate.from_messages([
@@ -122,7 +118,6 @@ class StructuredDataAgent:
         )
 
     def invoke(self, query: str) -> Dict[str, Any]:
-        """Run the structured data agent on a query."""
         self._tool_call_log.clear()
         result = self.executor.invoke({"input": query})
         output = result.get("output", "")

@@ -1,0 +1,357 @@
+================================================================================
+DOCUMENT 1: LLOYDS BANKING GROUP — AML POLICY EXTRACT (SYNTHETIC)
+Version: 4.2  |  Classification: Internal  |  Last Reviewed: January 2024
+================================================================================
+ 
+SECTION 1 — PURPOSE AND SCOPE
+-------------------------------
+This policy sets out Lloyds Banking Group's obligations and internal controls
+for preventing, detecting, and reporting money laundering, terrorist financing,
+and other forms of financial crime. It applies to all business lines, including
+Retail Banking, Commercial Banking, and Wealth Management.
+ 
+All colleagues are required to remain vigilant for indicators of suspicious
+activity and to report concerns promptly through the established Suspicious
+Activity Report (SAR) process to the Money Laundering Reporting Officer (MLRO).
+ 
+SECTION 2 — CUSTOMER DUE DILIGENCE (CDD)
+------------------------------------------
+Standard CDD must be applied to all new customers at onboarding and on a
+risk-based schedule thereafter. CDD comprises:
+  (a) Identity verification against government-issued documentation
+  (b) Verification of residential or registered business address
+  (c) Understanding the purpose and intended nature of the business relationship
+  (d) Ongoing monitoring of transactions relative to the customer's known profile
+ 
+Enhanced Due Diligence (EDD) is mandatory where a customer is identified as:
+  - A Politically Exposed Person (PEP) or close associate of a PEP
+  - Resident or registered in a FATF grey-listed or black-listed jurisdiction
+  - Operating in a high-risk sector (e.g., cash-intensive, correspondent banking,
+        money service businesses)
+  - Subject to a previous Suspicious Activity Report
+ 
+EDD measures include obtaining senior management approval, establishing the
+source of wealth and source of funds, and applying enhanced ongoing monitoring.
+ 
+SECTION 3 — SUSPICIOUS ACTIVITY REPORTING
+-------------------------------------------
+A SAR must be submitted to the National Crime Agency (NCA) via the SAR Online
+system where a colleague knows or suspects, or has reasonable grounds to know
+or suspect, that a person is engaged in or attempting money laundering or
+terrorist financing.
+ 
+The reporting obligation is triggered by suspicion — not certainty. A colleague
+must not conduct the transaction or continue to service the customer while a SAR
+is pending consent from the NCA, except where the transaction cannot practicably
+be delayed (tipping-off considerations apply).
+ 
+Internal SARs must be submitted to the MLRO within 24 hours of the concern
+arising. The MLRO will make the determination on external reporting within 7
+working days.
+ 
+Tipping-off: it is a criminal offence under Section 333A of the Proceeds of
+Crime Act 2002 to disclose to a customer or third party that a SAR has been
+made, or that an investigation is underway or contemplated.
+ 
+SECTION 4 — HIGH-RISK INDICATORS (GENERAL)
+--------------------------------------------
+The following are general indicators that may, in combination with other factors,
+indicate potential money laundering or financial crime:
+ 
+  - Transactions that are inconsistent with the customer's known profile,
+        occupation, or stated business purpose
+  - Reluctance to provide satisfactory documentation or explanations
+  - Multiple accounts at different branches used in a pattern suggesting
+        deliberate fragmentation of funds
+  - Sudden or unexplained increases in transaction volumes or values
+  - Use of third parties to conduct transactions on behalf of a customer
+        without a clear legitimate commercial reason
+  - Frequent international transfers to or from high-risk jurisdictions
+  - Rapid movement of funds through accounts with little or no apparent
+        business purpose (layering behaviour)
+ 
+SECTION 5 — ESCALATION AND GOVERNANCE
+----------------------------------------
+Potential matches against sanctions lists must be escalated to the Financial
+Crime Compliance team within 2 hours of identification. All sanctions alerts
+must be treated as priority and must not be closed without sign-off from a
+Financial Crime Manager or above.
+ 
+Cases involving PEP-flagged customers require senior investigator review before
+any case can be moved to a NO_ACTION_TAKEN outcome.
+ 
+ 
+================================================================================
+DOCUMENT 2: FCA JMLSG GUIDANCE EXTRACT — PART I (SYNTHETIC)
+Covers: AML/CTF Controls, Typologies and Reporting Obligations
+For internal reference only — synthetic training material
+================================================================================
+ 
+CHAPTER 4 — KNOW YOUR CUSTOMER AND CUSTOMER DUE DILIGENCE
+-----------------------------------------------------------
+Firms must establish and maintain appropriate risk-based customer due diligence
+procedures. The level of due diligence applied should be proportionate to the
+money laundering and terrorist financing risk posed by the customer and the
+business relationship.
+ 
+Risk factors that increase the level of due diligence required include:
+  - Non-face-to-face business relationships
+  - Customers from politically unstable countries
+  - Customers in sectors associated with higher money laundering risk
+  - Complex ownership structures that obscure the beneficial owner
+ 
+Simplified Due Diligence (SDD) may be applied only where the risk of money
+laundering or terrorist financing is demonstrably low and the customer is a
+regulated financial institution or listed company subject to disclosure
+obligations equivalent to those in the UK.
+ 
+CHAPTER 7 — TRADE-BASED MONEY LAUNDERING (TBML)
+-------------------------------------------------
+Trade-Based Money Laundering (TBML) involves the exploitation of international
+trade transactions to transfer value across borders and obscure the origins of
+criminal proceeds. TBML is one of the most complex and prevalent forms of money
+laundering and is frequently used by organised criminal networks.
+ 
+Red flags for Trade-Based Money Laundering include:
+ 
+  (a) Invoice manipulation: over- or under-invoicing of goods or services
+          relative to market value. A transaction involving payment significantly
+          above or below the market rate for the stated goods, without a plausible
+          commercial explanation, is a primary indicator.
+ 
+  (b) Multiple invoicing: the same goods or services are invoiced more than once
+          to justify multiple payment transfers. Firms should look for duplicate
+          reference numbers, identical amounts paid to different counterparties, or
+          sequential invoice numbers from different suppliers for the same delivery.
+ 
+  (c) Falsely described goods or services: the description of goods in shipping
+          documents does not match the nature of the declared business, the declared
+          country of origin, or the stated destination. Vague descriptions such as
+          "general merchandise" or "goods" without further specification are
+          indicative.
+ 
+  (d) Payments to or from unrelated third parties: where the party making or
+          receiving payment is not the counterparty named in the trade document,
+          this may indicate that the trade transaction is being used as a front to
+          move funds between unconnected parties.
+ 
+  (e) Use of free trade zones or high-risk jurisdictions: transactions routed
+          through free trade zones, particularly those with limited oversight, or
+          through countries on the FATF grey or black list without a clear commercial
+          rationale, are higher risk.
+ 
+  (f) Unusual payment terms: payment in advance for high-value goods, payment
+          via a third-country bank unrelated to either the buyer or seller, or
+          payments structured in amounts just below reporting thresholds.
+ 
+  (g) Inconsistency between declared cargo value and shipping costs: where
+          insurance premiums or freight costs are disproportionate to the declared
+          cargo value, this may indicate manipulation of the stated value.
+ 
+Firms should apply enhanced scrutiny to documentary trade finance transactions,
+letters of credit, and open-account trade payments where one or more of these
+indicators are present. A combination of three or more indicators in a single
+transaction should trigger a SAR consideration.
+ 
+CHAPTER 8 — STRUCTURING AND SMURFING
+---------------------------------------
+Structuring (also known as smurfing) involves the deliberate breaking up of
+large sums of money into smaller amounts to avoid transaction reporting
+thresholds. It is a criminal offence under the Proceeds of Crime Act 2002
+regardless of whether the underlying funds are criminal in origin.
+ 
+Key indicators of structuring activity:
+  - Multiple cash deposits of amounts just below the internal or regulatory
+        reporting threshold (commonly sub-£1,000 or sub-£10,000 depending on
+        the applicable threshold), made in a short period of time across multiple
+        branches or accounts
+  - Deposits made by multiple individuals at different branches on the same
+        or consecutive days, where the individuals are known associates or where
+        the funds are subsequently consolidated into a single account
+  - Round-number deposits that follow a repetitive pattern in amount and timing
+  - Customer exhibits awareness of transaction monitoring thresholds, for
+        example by enquiring about the threshold before making a deposit
+ 
+The reporting threshold for cash transactions under the Proceeds of Crime Act
+2002 suspicious activity reporting obligation is not a fixed monetary amount.
+The obligation is triggered by suspicion, not by a specific value. However,
+for internal triage purposes, transactions involving cumulative cash deposits
+exceeding £10,000 within a 30-day period from a single customer should be
+subject to enhanced review.
+ 
+For structuring alerts specifically, where a customer makes more than 5 cash
+deposits each below £2,000 within a 7-day period, this should be escalated
+for SAR consideration without further threshold qualification.
+ 
+CHAPTER 9 — AUTHORISED PUSH PAYMENT FRAUD (APP SCAM)
+------------------------------------------------------
+Authorised Push Payment (APP) fraud involves a victim being deceived into
+authorising a payment to an account controlled by a fraudster. APP fraud
+represents one of the fastest-growing categories of financial crime in the
+United Kingdom and Lloyds Banking Group is required under the PSR Mandatory
+Reimbursement Scheme (effective October 2024) to consider reimbursement in
+the majority of cases.
+ 
+Indicators of APP scam activity on the receiving account side:
+ 
+  (a) Account is newly opened (within 90 days) and receives one or more large
+          inbound transfers immediately followed by rapid onward payments
+  (b) Inbound funds are dispersed to multiple accounts within 24–48 hours,
+          frequently to crypto exchanges, mule account networks, or international
+          beneficiaries
+  (c) Account holder has no prior transaction history consistent with receiving
+          funds of the magnitude observed
+  (d) Multiple victims making payments to the same destination account or sort
+          code within a short window (crowdsourced fraud signal)
+  (e) Account is associated with false identity documentation or address
+          discrepancies identified during onboarding
+ 
+Reporting obligation for APP scam: where a receiving account is identified as
+the beneficiary of APP fraud, a SAR must be filed and the account must be
+suspended pending investigation. The victim's bank must be notified within
+24 hours of identification. Cases involving suspected mule account networks
+must be escalated to the Financial Crime Investigations team.
+ 
+CHAPTER 11 — POLITICALLY EXPOSED PERSONS (PEPS)
+-------------------------------------------------
+A Politically Exposed Person (PEP) is an individual who holds, or has held
+within the last 12 months, a prominent public function. This includes:
+  - Heads of state and government ministers
+  - Senior politicians and members of parliament
+  - Senior officials of government departments and judicial bodies
+  - Senior executives of state-owned enterprises
+  - Senior officials of international organisations
+ 
+PEP status does not automatically indicate criminality. However, due to the
+elevated risk of bribery and corruption associated with their position, PEPs
+must be subject to Enhanced Due Diligence, including:
+  - Senior management approval before establishing or continuing the relationship
+  - Establishing the source of wealth (not merely source of funds)
+  - Enhanced ongoing monitoring on at least a quarterly basis
+ 
+Family members and known close associates of PEPs must be treated with the
+same level of enhanced scrutiny.
+ 
+PEP status must be reviewed at least annually. A customer who ceases to hold
+a PEP position transitions to a standard risk profile only after 12 months
+have elapsed from the end of their public function, subject to risk assessment.
+ 
+ 
+================================================================================
+DOCUMENT 3: NCA FRAUD TYPOLOGY REFERENCE — ECONOMIC CRIME UNIT (SYNTHETIC)
+Reference: NCA-ECP-TYP-2024-03  |  For internal training use only
+================================================================================
+ 
+TYPOLOGY REF NCA-001: INVOICE FRAUD
+-------------------------------------
+Invoice fraud involves the creation of fraudulent invoices to extract funds
+from victim organisations or to justify the movement of criminal proceeds
+through a business account.
+ 
+Common patterns:
+  - Sole trader or small business accounts receive large payments from dormant
+        or recently incorporated companies, followed by rapid dissipation of funds
+  - Invoices are issued for services that are vague or unverifiable (e.g.,
+        "consultancy," "management fees," "professional services") with no
+        supporting contracts or delivery evidence
+  - Counterparty companies have no trading history, no web presence, and no
+        employees registered at Companies House
+  - Multiple invoices to different dormant companies are paid in rapid
+        succession (within 24–72 hours), all for similar amounts
+  - The receiving account subsequently makes payments to cash-intensive
+        businesses, cryptocurrency exchanges, or international transfers
+ 
+SAR filing obligation: where three or more of the above indicators are present
+in a single customer's account activity within a 30-day period, a SAR must be
+filed within 5 working days of the identification of the pattern.
+ 
+TYPOLOGY REF NCA-002: MONEY MULE ACTIVITY
+-------------------------------------------
+A money mule is an individual whose account is used — either knowingly or
+unknowingly — to receive and transfer criminal proceeds on behalf of a third
+party. Mule accounts are a key enabler in the layering stage of money
+laundering.
+ 
+Indicators of mule account activity:
+  - Account receives multiple inbound transfers from unconnected third parties
+        within a short window, with funds rapidly moved onward
+  - Account holder's transaction profile is inconsistent with their stated
+        occupation or income level
+  - Account holder is contacted by the bank and provides explanations that are
+        inconsistent, evasive, or coached
+  - Address or contact details frequently changed
+  - Account is linked to multiple SIM cards or IP addresses in different
+        geographic locations
+  - Customer was recruited via social media or unsolicited contact promising
+        a commission for use of their account
+ 
+SAR filing obligation: mandatory on identification. Account must be suspended
+pending investigation.
+ 
+TYPOLOGY REF NCA-003: SANCTIONS EVASION
+-----------------------------------------
+Sanctions evasion involves the use of intermediaries, shell companies, or
+complex transaction layering to obscure connections to sanctioned individuals,
+entities, or jurisdictions.
+ 
+Key indicators:
+  - Transaction chain involves a jurisdiction on the OFAC, HMT, or UN
+        sanctions list, even if the direct counterparty is not sanctioned
+  - Payment references are deliberately vague or coded
+  - Correspondent bank is located in a jurisdiction known for lax AML controls
+  - Beneficial ownership cannot be established due to complex corporate
+        structures spanning multiple jurisdictions
+  - Customer has changed address or nationality documentation recently,
+        potentially to obscure connection to a sanctioned jurisdiction
+ 
+Reporting obligation: all potential sanctions matches must be escalated
+immediately. A SAR must be filed in all cases where there is a plausible
+connection to a sanctioned entity or jurisdiction, regardless of transaction
+value.
+ 
+TYPOLOGY REF NCA-004: CRYPTOCURRENCY-LINKED MONEY LAUNDERING
+--------------------------------------------------------------
+The use of cryptocurrency as a layering mechanism is a growing trend in
+economic crime. While cryptocurrency transactions are visible on public
+blockchains, the conversion of criminal cash to crypto — and the subsequent
+reconversion to fiat currency via exchanges — provides a degree of obscurity
+when combined with mixing services.
+ 
+Indicators:
+  - Large cash deposits followed immediately by purchases at cryptocurrency
+        exchanges via bank transfer
+  - Multiple small transfers to crypto exchanges from the same account,
+        potentially structured below monitoring thresholds
+  - Inbound funds from cryptocurrency exchange settlement accounts that are
+        inconsistent with the customer's stated activity
+  - Use of privacy coins or mixing services identified in transaction metadata
+ 
+Reporting obligation: where the value of crypto-linked transactions exceeds
+£10,000 in a 30-day period and the source of funds cannot be established,
+a SAR must be filed.
+ 
+TYPOLOGY REF NCA-005: PROLIFERATION FINANCING
+-----------------------------------------------
+Proliferation financing involves the provision of financial services that
+support the development or acquisition of weapons capable of mass destruction.
+It is subject to the same reporting framework as terrorist financing.
+ 
+Firms must apply enhanced scrutiny to transactions involving:
+  - Dual-use goods (goods with both civilian and military applications)
+  - Companies in sectors associated with arms manufacturing or military
+        procurement, particularly in sanctioned jurisdictions
+  - Payments described as being for "technical equipment," "engineering
+        components," or "research materials" without clear commercial justification
+ 
+Any suspicion of proliferation financing must be escalated to the MLRO
+immediately and a Defence Against Money Laundering (DAML) SAR filed.
+ 
+================================================================================
+END OF POLICY CORPUS
+================================================================================
+
+
+
+
+
+

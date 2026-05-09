@@ -13,9 +13,8 @@ import re
 from typing import Any, Dict, List
 
 from langchain_core.prompts import PromptTemplate
-from langchain_google_genai import ChatGoogleGenerativeAI
 
-from crimeshield.config import GEMINI_API_KEY, LLM_MODEL
+from crimeshield.utils.llm import get_llm
 from crimeshield.utils.prompts import load_prompt
 
 logger = logging.getLogger(__name__)
@@ -34,11 +33,7 @@ class SARDraftingAgent:
     def __init__(self) -> None:
         self._prompt_cfg = load_prompt("sar_drafting")
 
-        self.llm = ChatGoogleGenerativeAI(
-            model=LLM_MODEL,
-            temperature=0,
-            google_api_key=GEMINI_API_KEY,
-        )
+        self.llm = get_llm(small=False)
 
         system_text = self._prompt_cfg["system"].rstrip()
         human_text = self._prompt_cfg.get(
@@ -53,7 +48,6 @@ class SARDraftingAgent:
         )
 
     def invoke(self, alert_record: dict) -> Dict[str, Any]:
-        """Generate a SAR narrative for the given alert record."""
         alert_id = alert_record.get("alert_id", "UNKNOWN")
         alert_data_str = json.dumps(alert_record, indent=2, default=str)
 

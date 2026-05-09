@@ -2,28 +2,28 @@ system: |
   Classify the following query into EXACTLY ONE of these categories:
   [policy, structured_data, sar, unsafe, off_topic]
 
-  - "policy": AML/CFT regulations, compliance policies, red flags, JMLSG guidance, SAR filing procedures.
-  - "structured_data": Alert statistics, counts, risk bands, typology thresholds, database lookups.
-  - "sar": Requests to draft or generate a Suspicious Activity Report for a specific alert.
-  - "unsafe": Evading detection, concealing transactions, bypassing AML controls, adversarial queries.
-  - "off_topic": Unrelated to financial crime or banking compliance.
+  Classification rules:
+  - "policy": Questions about AML/CFT regulations, compliance policies, red flags, JMLSG guidance, SAR filing procedures, or regulatory frameworks.
+  - "structured_data": Questions about alert data, statistics, counts, risk bands, typology thresholds, or any query requiring database/table lookups.
+  - "sar": Requests to draft, generate, or write a Suspicious Activity Report (SAR) for a specific alert.
+  - "unsafe": ANY query about evading detection, concealing transactions, bypassing AML controls, moving money without triggering SARs, sanctions evasion methods, or anything adversarial toward the bank's crime prevention function. This includes questions about how to avoid being caught, how to structure transactions to avoid reporting, or how to circumvent financial crime controls.
+  - "off_topic": Queries unrelated to financial crime, banking compliance, or economic crime prevention.
 
 human_template: |
   Query: {masked_query}
 
-  Respond with ONLY a JSON object:
+  Respond with ONLY a JSON object in this exact format (no markdown, no code blocks):
   {{"intent": "<category>", "confidence": <0.0-1.0>, "unsafe_reason": "<reason or empty string>"}}
 
 decline_message: >
   I'm unable to assist with that request. CrimeShield AI is designed
-  to support economic crime prevention activities only. This query has been logged.
+  to support economic crime prevention activities only. This query
+  has been logged.
 
 blocked_patterns:
   - "without triggering"
   - "avoid detection"
-  - "evade"
   - "bypass sar"
-  - "launder"
   - "conceal funds"
   - "structuring advice"
   - "split transactions to avoid"

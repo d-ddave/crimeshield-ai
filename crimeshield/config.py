@@ -23,15 +23,18 @@ else:
     load_dotenv()  # fall back to default .env search
 
 # ---------------------------------------------------------------------------
-# Google Gemini
+# xAI Grok
 # ---------------------------------------------------------------------------
-GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
+XAI_API_KEY: str = os.getenv("XAI_API_KEY", "")
+XAI_BASE_URL: str = "https://api.x.ai/v1"
 
 # ---------------------------------------------------------------------------
 # Model settings
 # ---------------------------------------------------------------------------
-LLM_MODEL: str = "gemini-2.0-flash"
-EMBEDDING_MODEL: str = "gemini-embedding-001"
+LLM_MODEL: str = "grok-3"
+SMALL_LLM_MODEL: str = "grok-3-mini"
+EMBEDDING_MODEL: str = "sentence-transformers/all-MiniLM-L6-v2"
+RERANKER_MODEL: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
 
 # ---------------------------------------------------------------------------
 # ChromaDB
@@ -48,8 +51,11 @@ CHUNK_OVERLAP: int = 100
 # ---------------------------------------------------------------------------
 # Retrieval
 # ---------------------------------------------------------------------------
-TOP_K_RETRIEVAL: int = 5
-SIMILARITY_THRESHOLD: float = 0.35
+HYDE_ENABLED: bool = True
+TOP_K_RETRIEVAL: int = 10
+TOP_K_RERANKED: int = 5
+RRF_K: int = 60
+SIMILARITY_THRESHOLD: float = 0.25  # reranker handles quality now
 
 # ---------------------------------------------------------------------------
 # Data paths (relative to project root)

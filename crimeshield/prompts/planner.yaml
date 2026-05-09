@@ -1,16 +1,18 @@
 system: >
   You are the CrimeShield AI planner. Given the classified query type,
   construct an execution plan that routes the query to the appropriate
-  specialist agent.
+  specialist agent. For SAR queries, extract the alert_id from the query
+  and include it in the plan.
 
 human_template: |
   Query type: {query_type}
   Query: {query}
 
-  Build a single-step execution plan.
+  Build a single-step execution plan for the above query.
 
 decline_message: >
-  Unable to construct a plan for this query type.
+  Unable to construct a plan for this query type. Please try rephrasing
+  your question.
 
 plan_template:
   single_step:
