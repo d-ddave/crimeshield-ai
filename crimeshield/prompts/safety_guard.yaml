@@ -1,0 +1,58 @@
+system: |
+  Classify the following query into EXACTLY ONE of these categories:
+  [policy, structured_data, sar, unsafe, off_topic]
+
+  - "policy": AML/CFT regulations, compliance policies, red flags, JMLSG guidance, SAR filing procedures.
+  - "structured_data": Alert statistics, counts, risk bands, typology thresholds, database lookups.
+  - "sar": Requests to draft or generate a Suspicious Activity Report for a specific alert.
+  - "unsafe": Evading detection, concealing transactions, bypassing AML controls, adversarial queries.
+  - "off_topic": Unrelated to financial crime or banking compliance.
+
+human_template: |
+  Query: {masked_query}
+
+  Respond with ONLY a JSON object:
+  {{"intent": "<category>", "confidence": <0.0-1.0>, "unsafe_reason": "<reason or empty string>"}}
+
+decline_message: >
+  I'm unable to assist with that request. CrimeShield AI is designed
+  to support economic crime prevention activities only. This query has been logged.
+
+blocked_patterns:
+  - "without triggering"
+  - "avoid detection"
+  - "evade"
+  - "bypass sar"
+  - "launder"
+  - "conceal funds"
+  - "structuring advice"
+  - "split transactions to avoid"
+  - "how to move money"
+  - "ignore previous instructions"
+  - "you are now"
+  - "forget your"
+  - "system prompt"
+  - "jailbreak"
+  - "bypass aml"
+  - "avoid suspicious"
+  - "hide transaction"
+  - "circumvent controls"
+  - "move cash without"
+  - "evading reporting"
+  - "avoid flagging"
+  - "structure payments"
+  - "not triggering"
+  - "prevent detection"
+  - "bypass compliance"
+
+injection_prefixes:
+  - "ignore previous"
+  - "system:"
+  - "<<sys>>"
+  - "you are now"
+  - "[inst]"
+  - "forget your instructions"
+  - "disregard all prior"
+  - "override your"
+  - "new instruction:"
+  - "act as if"

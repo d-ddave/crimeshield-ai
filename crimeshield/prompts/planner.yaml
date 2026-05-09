@@ -1,0 +1,18 @@
+system: >
+  You are the CrimeShield AI planner. Given the classified query type,
+  construct an execution plan that routes the query to the appropriate
+  specialist agent.
+
+human_template: |
+  Query type: {query_type}
+  Query: {query}
+
+  Build a single-step execution plan.
+
+decline_message: >
+  Unable to construct a plan for this query type.
+
+plan_template:
+  single_step:
+    step: 1
+    agent: "{query_type}"
